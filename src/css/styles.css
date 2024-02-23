@@ -1,25 +1,86 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.container {
+  display: flex;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.sidebar {
+  max-width: 356px;
+  max-height: 472px;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 20px;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.categories {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 328px;
+  height: 472px;
+}
+.category {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.category:hover {
+  color: #007bff;
+}
+
+.banner {
+  background: linear-gradient(to bottom, #007bff, #00bfff);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  height: 400px;
+}
+
+
+.best-seller-books {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book:hover {
+  background-color: #f0f0f0;
+}
+
+.books-list {
+  display: flex;
+  gap: 20px;
+}
+
+.book-item {
+  max-width: 180px;
+  max-height: 306px;
+}
+
+.book-image {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
 }
